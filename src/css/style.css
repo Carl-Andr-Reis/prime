@@ -1,0 +1,195 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    animation: changeBackground 32s infinite; /* Adiciona animação para trocar o fundo */
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Overlay to decrease opacity */
+    z-index: -1;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url(../img/The-Boys-passa-por-mudanca-apos-ataque-contra-Trum0127890400202407181236_2.jpg);
+    }
+    20% {
+        background-image: url(../img/14143.jpg);
+    }
+    40% {
+        background-image: url(../img/13436.jpg);
+    }
+    60% {
+        background-image: url(../img/good-omens-fab-fanart-fnim9yvad8czffq5_2.jpg);
+    }
+    80% {
+        background-image: url(../img/15596.jpg);
+    }
+    100% {
+        background-image: url(../img/The-Boys-passa-por-mudanca-apos-ataque-contra-Trum0127890400202407181236_2.jpg);
+    }
+}
+
+header {
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 1000;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+}
+
+.site-icon {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    width: 65px;
+    height: 33px;
+    margin-left: 15px;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.header-icon2 {
+    width: 80px;
+    height: 40px;
+    margin-left: 15px;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-top: 8px;
+}
+
+.header-icon3 {
+    width: 65px;
+    height: 65px;
+    margin-left: 15px;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 10px; /* Ensure content is not hidden behind the header */
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.promo-message-desktop {
+    position: absolute;
+    left: 20px;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+.promo-message-desktop h1 {
+    margin-bottom: 16px;
+    font-size: 35px; /* Increased font size */
+    font-family: 'Inter', sans-serif; /* Inter font */
+    letter-spacing: 3px;
+    max-width: 520px;
+}
+
+.promo-message-desktop p {
+    margin-bottom: 5px 0;
+    font-size: 20px; /* Increased font size */
+    font-family: 'Lato', sans-serif; /* Lato font */
+    letter-spacing: 1px;
+    max-width: 380px;
+}
+
+.login-form {
+    padding: 30px;
+    width: 300px;
+    background-color: transparent; /* Removed background color */
+    box-shadow: none; /* Removed box-shadow */
+    margin-bottom: 100px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 85px; /* Adjusted width for smaller button */
+    padding: 8px; /* Adjusted padding for smaller button */
+    margin: 0 auto; /* Center the button */
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.signup-link {
+    display: block;
+    margin-top: 20px;
+    color: #007BFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
